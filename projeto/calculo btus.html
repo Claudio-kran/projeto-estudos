@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora de BTUs</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		
+		h1 {
+			text-align: center;
+			margin-top: 20px;
+		}
+		
+		form {
+			margin: 20px auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 5px rgba(0,0,0,0.2);
+			max-width: 500px;
+		}
+		
+		fieldset {
+			border: none;
+			padding: 0;
+			margin: 0;
+		}
+		
+		label {
+			display: block;
+			margin-bottom: 5px;
+		}
+		
+		input[type="number"] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 10px;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0,0,0,0.2);
+			font-size: 16px;
+			box-sizing: border-box;
+		}
+		
+		button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+		
+		button:hover {
+			background-color: #3e8e41;
+		}
+		
+		.resultado {
+			text-align: center;
+			margin-top: 20px;
+			font-size: 24px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<h1>Calculadora de BTUs</h1>
+	<form>
+		<fieldset>
+			<legend>Insira as informações abaixo para calcular o número de BTUs necessários para o seu ambiente:</legend>
+			<label for="comprimento">Comprimento (em metros):</label>
+			<input type="number" id="comprimento" name="comprimento" required>
+			<label for="largura">Largura (em metros):</label>
+			<input type="number" id="largura" name="largura" required>
+			<label for="altura">Altura (em metros):</label>
+			<input type="number" id="altura" name="altura" required>
+			<label for="pessoas">Número de pessoas:</label>
+			<input type="number" id="pessoas" name="pessoas" required>
+			<label for="equipamentos">Número de equipamentos:</label>
+			<input type="number" id="equipamentos" name="equipamentos" required>
+			<button type="submit" onclick="calcularBTUs()">Calcular</button>
+		</fieldset>
+	</form>
+	<p id="resultado" class="resultado"></p>
+	<script src="script.js"></script>
+</body>
+</html>

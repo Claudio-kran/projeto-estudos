@@ -1,0 +1,49 @@
+body{
+    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(15, 2, 199, 0.815),rgb(133, 24, 196),rgb(10, 83, 14));
+    background-clip: content-box;
+    background-size: contain;
+    background-attachment: fixed;
+
+
+}
+
+h1{
+
+    
+    font-size: 60px;
+    color: rgba(34, 25, 110, 0.822);
+    margin: 10px;
+    padding: 10px;
+
+
+
+ }
+
+ p{ 
+   font-size: 30px;
+    
+    color: rgba(15, 30, 71, 0.603);
+    
+
+
+
+ }
+
+ .pr{
+   font-size: 40px;
+   
+   
+ }
+
+ button{
+  background-color: rgb(184, 59, 59);
+  width: 850px;
+  border-radius: 1px solid;
+  border-radius: 10px;
+ }
+
+
+
